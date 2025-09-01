@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- keep the line below for OpenProcessing compatibility -->
+    <script src="https://openprocessing.org/openprocessing_sketch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.10.0/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.10.0/lib/addons/p5.sound.min.js"></script>
+    <script src="data.js"></script>
+    <script src="mySketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/cmu-serif");
+    </style>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/latin-modern-math");
+    </style>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+
+  <body>
+    <button onclick="num=0">Reset to 0</button>
+    <button id="playBtn">Play</button>
+    <div id="frame" style="font-size: 2em; margin-top: 20px"></div>
+  </body>
+</html>

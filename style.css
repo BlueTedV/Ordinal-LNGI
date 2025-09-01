@@ -1,0 +1,10 @@
+html,
+body {
+	margin: 5;
+	padding: 5;
+	font-size: 25px;
+	font-family: "Latin Modern Math";
+	background: black;
+	color: white;
+	text-shadow: 0 0 5px, 0 0 5px, 0 0 5px;
+}
