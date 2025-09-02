@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- keep the line below for OpenProcessing compatibility -->
     <script src="https://openprocessing.org/openprocessing_sketch.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.10.0/lib/p5.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.10.0/lib/addons/p5.sound.min.js"></script>
     <script src="data.js"></script>
+    <script src="alternate.js"></script>
     <script src="mySketch.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <style>
@@ -29,12 +31,22 @@
   </head>
 
   <body>
-    <button id="resetBtn">Reset to 0</button>
-    <button id="leftBtn">Left</button>
-    <button id="playBtn">Play</button>
-    <button id="rightBtn">Right</button>
-    <label for="intervalInput" style="margin-left:10px;">Interval (ms):</label>
-    <input type="number" id="intervalInput" value="300" min="50" style="width:70px;">
-    <div id="frame" style="font-size: 2em; margin-top: 20px"></div>
+    <h1>Ordinal LNGI (i guess)</h1>
+    <div class="controls">
+      <button id="resetBtn">Reset to 0</button>
+      <button id="shortenedBtn">Shortened</button>
+      <button id="originalBtn">Original</button>
+      <button id="leftBtn">Left</button>
+      <button id="playBtn">Play</button>
+      <button id="rightBtn">Right</button>
+      <label for="intervalInput">Interval (ms):</label>
+      <input
+        type="number"
+        id="intervalInput"
+        value="300"
+        min="50"
+      />
+    </div>
+    <div id="frame"></div>
   </body>
 </html>
