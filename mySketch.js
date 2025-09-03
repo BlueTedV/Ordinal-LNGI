@@ -1,7 +1,7 @@
 let currentFrame = 0;
 let playInterval = null;
 let intervalSpeed = 300;
-let currentFrames = typeof frames !== "undefined" ? frames : []; // Default to frames
+let currentFrames = typeof alternateFrames !== "undefined" ? alternateFrames : []; // Default to alternateFrames
 
 function showFrame() {
   document.getElementById("frame").innerHTML = currentFrames[currentFrame];
